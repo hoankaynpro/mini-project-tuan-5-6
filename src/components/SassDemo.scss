@@ -1,0 +1,21 @@
+@use "sass:color";
+
+$main-color: #4caf50;
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: color.adjust($main-color, $lightness: 10%);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &-active {
+    background-color: $main-color;
+  }
+
+  &-disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+}
